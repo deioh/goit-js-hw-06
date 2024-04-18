@@ -1,5 +1,24 @@
-let totalCategories = document.getElementsByClassName("item");
-console.log("Number of Categories = " + totalCategories.length);
+let categories = document.getElementsByClassName("item");
+
+let categoriesName = document.querySelectorAll("h2");
+let categoriesItem = categories.childElementCount;
+
+console.log("Number of Categories = " + categories.length);
+// console.log(categoriesName[0].innerText);
+// console.log(
+//   `Elements:  ${categories[0].firstElementChild.nextElementSibling.children.length}`
+// );
+
+for (let i = 0; i < categories.length; i++) {
+  console.log("Categories: " + categoriesName[i].innerText);
+  console.log(
+    `Elements:  ${categories[i].firstElementChild.nextElementSibling.children.length}`
+  );
+}
+
+// for (let i = 0; i < categories.length; i++) {
+//   console.log(categories[i]);
+// }
 
 // let uList = document.getElementById("categories");
 // let allList = document.querySelectorAll(".item");
@@ -26,8 +45,8 @@ console.log("Number of Categories = " + totalCategories.length);
 //   element.style.color = "blue";
 // });
 
-// for (let index = 0; index < item.length; index++) {
-//   item[index].style.color = "red";
+// for (let i = 0; i < item.length; i++) {
+//   item[i].style.color = "red";
 // }
 
 //console.log(checkBtn);

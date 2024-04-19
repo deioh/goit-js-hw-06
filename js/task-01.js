@@ -7,11 +7,12 @@
 
 
 // number of categories
-let categoriesItem = document.getElementsByClassName("item")
+//let categoriesItem = document.getElementsByClassName("item")
 let categoriesQuery = document.querySelectorAll(".item")
 
 // Log to console
-console.log(`Number of categories: ${categoriesItem.length}`)
+//console.log(`Number of categories: ${categoriesItem.length}`)
+console.log(`Number of categories: ${categoriesQuery.length}`)
 
 for (let i = 0; i < categoriesQuery.length; i++) {    
     console.log(`Categories : ${categoriesQuery[i].firstElementChild.innerHTML}`)

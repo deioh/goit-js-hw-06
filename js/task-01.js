@@ -4,14 +4,15 @@
 //console.log(categoriesQuery[0].firstElementChild.innerHTML)
 //console.log(categoriesQuery[0].firstElementChild.nextElementSibling.childElementCount)
 //console.log(categoriesQuery)
-
+//let categoriesItem = document.getElementsByClassName("item")
+//console.log(`Number of categories: ${categoriesItem.length}`)
 
 // number of categories
-//let categoriesItem = document.getElementsByClassName("item")
+
 let categoriesQuery = document.querySelectorAll(".item")
 
 // Log to console
-//console.log(`Number of categories: ${categoriesItem.length}`)
+
 console.log(`Number of categories: ${categoriesQuery.length}`)
 
 for (let i = 0; i < categoriesQuery.length; i++) {    

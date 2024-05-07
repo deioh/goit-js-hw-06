@@ -1,20 +1,15 @@
 let initialValue = 0; // Set initial value
 
-let value = document.getElementById("value");
-value.textContent = initialValue;
+const valueElement = document.getElementById("value");
+valueElement.textContent = initialValue;
 
 const incrementButton = document.querySelector('[data-action="increment"]');
 const decrementButton = document.querySelector('[data-action="decrement"]');
 
-incrementButton.onclick = increment;
-decrementButton.onclick = decrement;
+incrementButton.onclick = () => {
+  valueElement.textContent = ++initialValue;
+};
 
-function increment() {
-  initialValue += 1;
-  value.textContent = initialValue;
-}
-
-function decrement() {
-  initialValue -= 1;
-  value.textContent = initialValue;
-}
+decrementButton.onclick = () => {
+  valueElement.textContent = --initialValue;
+};

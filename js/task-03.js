@@ -16,9 +16,14 @@ const images = [
 const ul = document.querySelector(".gallery");
 
 for (let image of images) {
-  let li = document.createElement("li");
+  const li = document.createElement("li");
+
   li.innerHTML = `
-  <img src="${image.url}" alt="${image.alt}">
+    <img
+      src="${image.url}"
+      alt="${image.alt}"
+    >
   `;
+
   ul.appendChild(li);
 }
